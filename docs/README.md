@@ -16,7 +16,7 @@ While the add-on is in beta testing:
 - Click `Load unpacked extension`
 - Select the unzipped folder
 
-* Remember to pin the add-on to the toolbar
+### Remember to pin the add-on to the toolbar
 
 # Instructions for use
 ## Authentication
