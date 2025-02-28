@@ -3,6 +3,12 @@
 A browser add-on to collect Discord messages for text mining and discourse analysis.  
 ⚠️ Use of this tool is subject to basic ethics and local data protection and intellectual property legislation.
 
+## Cite this program
+
+If you use this extension for your research, please reference it as follows:
+
+Moncomble, F. (2024). DiscordScraper (Version 0.1) [JavaScript]. Arras, France: Université d’Artois. Available at: https://fmoncomble.github.io/DiscordScraper/
+
 # Download and install
 ## Firefox
 [![Firefox add-on](https://github.com/user-attachments/assets/855e2e46-2b44-42d7-bba5-f2a2fbb7e88b)](https://github.com/fmoncomble/discordscraper/releases/latest/download/discordscraper.xpi)
