@@ -30,5 +30,5 @@ While the add-on is in beta testing:
     - ⚠️ All of a given server's channels are displayed in the channels dropdown, including some to which you may not have access. Make sure to choose a channel you are a member of.
 - Once done, click `Download` to display a dialog to select which metadata you want to include in the resulting file. By default, `content`, `timestamp` and `username` are checked.
 - Choose a file format
-    - (`XML/XTZ` creates an XML file specially formatted for import into [TXM](https://txm.gitpages.huma-num.fr/textometrie/index.html). On import, make sure to click the `Textual planes` item and type `ref` in the `Out of text to include` section.)
+    - (`XML/XTZ` creates an XML file specially formatted for import into [TXM](https://txm.gitpages.huma-num.fr/textometrie/index.html). On import, make sure to click the "Textual planes" item and type `ref` in the "Out of text to edit" section.)
 - Click `Download` to retrieve the file.
