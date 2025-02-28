@@ -9,7 +9,7 @@ A browser add-on to collect Discord messages for text mining and discourse analy
 
 ## Chromium-based browsers
 While the add-on is in beta testing:
-- Download the repository as a zip file
+- [Download the repository as a zip file](https://github.com/fmoncomble/discordscraper/releases/latest/download/discordscraper.zip)
 - Unzip into a folder on your computer
 - Open `chrome://extensions` (or similar depending on your browser)
 - Toggle Developer mode
