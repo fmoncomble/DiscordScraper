@@ -5,7 +5,7 @@ A browser add-on to collect Discord messages for text mining and discourse analy
 
 # Download and install
 ## Firefox
-![Firefox add-on](https://github.com/user-attachments/assets/855e2e46-2b44-42d7-bba5-f2a2fbb7e88b)
+[![Firefox add-on](https://github.com/user-attachments/assets/855e2e46-2b44-42d7-bba5-f2a2fbb7e88b)](https://github.com/fmoncomble/discordscraper/releases/latest/download/discordscraper.xpi)
 
 ## Chromium-based browsers
 While the add-on is in beta testing:
