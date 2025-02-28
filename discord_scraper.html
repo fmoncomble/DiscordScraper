@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord Scraper</title>
+        <script src="discord_scraper.js"></script>
+        <script src="polyfill.js"></script>
+        <script src="exceljs.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="discord_scraper.css" />
+        <link rel="icon" type="favicon" href="icons/favicon.ico" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1><img src="icons/ds_logo.svg" width="400"/></h1>
+        <div class="wrapper">
+            <div id="get_token">
+                <div class="instructions">
+                    Click the button below to open Discord,<br />then
+                    right-click your avatar in the bottom-left corner<br />to
+                    copy your user token.
+                </div>
+                <button id="get_token">Get Token</button>
+            </div>
+            <div>
+                <input
+                    type="text"
+                    id="token"
+                    placeholder="Paste your Discord user token here"
+                />
+                <button id="save_token">Save</button>
+            </div>
+            <div id="container" style="display: none">
+                <div>
+                    <span class="label">Choose a server: </span>
+                    <select id="servers"></select>
+                </div>
+                <div>
+                    <span class="label">Choose a channel: </span>
+                    <select id="channels"></select>
+                </div>
+                <div>
+                    <button id="start">Start</button>
+                    <button id="stop" class="stop" style="display: none">Stop</button>
+                    <div id="counter"></div>
+                </div>
+            </div>
+            <div id="dl_btn_container" style="display: none">
+                <button id="dl_btn">Download</button>
+            </div>
+            <dialog id="dl_dialog">
+                <div class="close-btn">❌</div>
+                <div id="dl_container">
+                    Select data to include:
+                    <div id="keys-container"></div>
+                </div>
+                <div id="options-container">
+                    <select id="format-select" class="dl-ui">
+                        <option value="xml">XML/XTZ</option>
+                        <option value="txt">TXT</option>
+                        <option value="csv">CSV</option>
+                        <option value="xlsx">XLSX</option>
+                        <option value="json">JSON</option>
+                    </select>
+                    <button id="dl-confirm-btn" class="dl-ui">Download</button>
+                </div>
+            </dialog>
+        </div>
+    </body>
+</html>

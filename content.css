@@ -1,0 +1,13 @@
+.discord_scraper_popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: #eee;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999999999;
+}

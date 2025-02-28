@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Ginto Discord Nord';
+    src: url(fonts/ABCGintoDiscordNord-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Ginto Discord Medium';
+    src: url(fonts/ABCGintoDiscord-Medium.woff) format('woff');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 img {
+    width: 250px;
+}
+
+button {
+    font-family: 'Ginto Discord Medium', 'Montserrat', system-ui, sans-serif;
+    background-color: #5865f2;
+    color: white;
+    padding: 4px 8px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}

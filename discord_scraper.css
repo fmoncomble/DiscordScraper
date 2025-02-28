@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Ginto Discord Nord';
+    src: url(fonts/ABCGintoDiscordNord-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Ginto Discord Medium';
+    src: url(fonts/ABCGintoDiscord-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Ginto Discord Regular';
+    src: url(fonts/ABCGintoDiscord-Regular.woff) format('woff');
+}
+
+body {
+    font-family: system-ui;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px 0;
+}
+
+h1 img {
+    width: 400;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    font-family: 'Ginto Discord Regular', system-ui, sans-serif;
+    margin: 10px;
+}
+
+div.instructions {
+    font-size: small;
+    border: 1px solid #5865f2;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+button {
+    font-family: 'Ginto Discord Medium', 'Montserrat', system-ui, sans-serif;
+    background-color: #5865f2;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.stop {
+    background-color: #cc0000;
+}
+
+button.stop:hover {
+    opacity: 0.8;
+}
+
+input[type='text'] {
+    font-family: 'Ginto Discord Regular', system-ui, sans-serif;
+    background-color: #e0e3ff;
+    padding: 4px 8px;
+    border: 1px solid #5865f2;
+    border-radius: 4px;
+    height: 22px;
+    width: 300px;
+}
+
+span.label {
+    display: inline;
+    margin-right: 5px;
+    font-size: small;
+}
+
+select {
+    font-family: 'Ginto Discord Regular', system-ui, sans-serif;
+    background-color: #e0e3ff;
+    padding: 4px 8px;
+    border: 1px solid #5865f2;
+    border-radius: 4px;
+    height: 30px;
+    display: inline;
+}
+
+button:disabled,
+select:disabled,
+input:disabled {
+    cursor: not-allowed;
+}
+
+#counter {
+    font-size: small;
+}
+
+dialog {
+    width: 50%;
+    height: 80vh;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #aaa;
+}
+
+dialog div.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+dialog div#dl-container {
+    height: 90%;
+}
+
+dialog div#keys-container {
+    height: 90%;
+    border: 1px solid #5865f2;
+    border-radius: 5px;
+    background-color: #e0e3ff;
+    margin: 10px 0;
+    overflow-y: scroll;
+    text-align: left;
+}
