@@ -1,4 +1,4 @@
-![ds_logo](https://github.com/user-attachments/assets/de974d79-5c2d-4ad3-973a-5d13c1534c46)  
+![ds_logo](https://github.com/user-attachments/assets/a9714a9c-7e5f-4229-ac0d-dc29a1808b69)  
 
 A browser add-on to collect Discord messages for text mining and discourse analysis.  
 ⚠️ Use of this tool is subject to basic ethics and local data protection and intellectual property legislation.
