@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Discord Scraper",
-    "version": "0.1",
+    "version": "0.1.2",
     "description": "A browser extension to scrape data from Discord.",
     "permissions": ["storage"],
     "action": {

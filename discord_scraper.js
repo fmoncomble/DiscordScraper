@@ -211,6 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.alert('You do not have access to this channel');
                 stopBtn.style.display = 'none';
                 startBtn.style.display = 'inline-block';
+                serverSelect.disabled = false;
+                channelSelect.disabled = false;
                 return;
             }
         } catch (error) {
@@ -538,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spinner.style.display = 'inline-block';
         let txt = '';
         for (let p of posts) {
-            let postData = p['record-text'];
+            let postData = p['content'];
             postData += '\n\n';
             txt += postData;
         }
