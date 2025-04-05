@@ -17,9 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const dlConfirmBtn = document.getElementById('dl-confirm-btn');
 
     getTokenBtn.addEventListener('click', () => {
+        chrome.runtime.onMessage.addListener(receiveToken);
+        chrome.runtime.sendMessage({
+            action: 'getToken',
+        });
         window.open('https://discord.com/channels/@me', '_blank');
         tokenInput.focus();
     });
+
     let token = chrome.storage.local.get('token', async (data) => {
         token = data.token;
         if (token) {
@@ -29,13 +34,24 @@ document.addEventListener('DOMContentLoaded', () => {
             saveTokenBtn.textContent = 'Clear';
             getUser(token);
             getServers(token);
+        } else {
+            chrome.runtime.onMessage.addListener(receiveToken);
         }
     });
+
+    function receiveToken(request) {
+        if (!token && request.message === 'saveToken') {
+            const token = request.token;
+            tokenInput.value = token;
+            saveTokenBtn.click();
+            chrome.runtime.onMessage.removeListener(receiveToken);
+        }
+    }
+
     saveTokenBtn.addEventListener('click', async () => {
         if (!token) {
             token = tokenInput.value;
             chrome.storage.local.set({ token: token }, () => {
-                console.log('Token saved');
             });
             saveTokenBtn.textContent = 'Clear';
             getTokenDiv.style.display = 'none';
@@ -47,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tokenInput.value = null;
             tokenInput.disabled = false;
             chrome.storage.local.remove('token', () => {
-                console.log('Token cleared');
             });
             saveTokenBtn.textContent = 'Save';
             getTokenDiv.style.display = 'block';
