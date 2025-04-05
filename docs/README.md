@@ -26,12 +26,10 @@ While the add-on is in beta testing:
 
 # Instructions for use
 ## Authentication
-- On first use, click the `Get token` button. This will take you to the Discord web app in a new tab, where you will need to be logged in.
-- On your Discord home page, right-click your avatar in the bottom-left corner, then click `Copy user token`.
-- If successful, this will close the Discord tab and bring you back to Discord Scraper to paste your token in the appropriate field.
+- On first use, click the `Authorize` button. This will take you to the Discord web app in a new tab (you may need to log in), which will close automatically as soon as your credentials have been retrieved.
 
 ## Collecting messages
-- Once your token has been pasted, you should see a dropdown menu of the servers where you are a member, and a second dropdown of the selected server's channels.
+- Once your token has been retrieved, you should see a dropdown menu of the servers where you are a member, and a second dropdown of the selected server's channels.
 - Choose a server and a channel, then click `Start` to start collecting messages. You can click `Stop` at any time to interrupt the process.
     - ⚠️ All of a given server's channels are displayed in the channels dropdown, including some to which you may not have access. Make sure to choose a channel you are a member of.
 - Once done, click `Download` to display a dialog to select which metadata you want to include in the resulting file. By default, `content`, `timestamp` and `username` are checked.

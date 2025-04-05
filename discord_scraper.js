@@ -31,16 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
             getTokenDiv.style.display = 'none';
             tokenInput.value = token;
             tokenInput.disabled = true;
-            saveTokenBtn.textContent = 'Clear';
+            saveTokenBtn.disabled = false;
             getUser(token);
             getServers(token);
         } else {
-            chrome.runtime.onMessage.addListener(receiveToken);
+            saveTokenBtn.disabled = true;
         }
     });
 
     function receiveToken(request) {
         if (!token && request.message === 'saveToken') {
+            saveTokenBtn.disabled = false;
             const token = request.token;
             tokenInput.value = token;
             saveTokenBtn.click();
@@ -53,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             token = tokenInput.value;
             chrome.storage.local.set({ token: token }, () => {
             });
-            saveTokenBtn.textContent = 'Clear';
             getTokenDiv.style.display = 'none';
             tokenInput.disabled = true;
             getUser(token);
@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
             tokenInput.disabled = false;
             chrome.storage.local.remove('token', () => {
             });
-            saveTokenBtn.textContent = 'Save';
             getTokenDiv.style.display = 'block';
+            saveTokenBtn.disabled = true;
             container.style.display = 'none';
         }
     });

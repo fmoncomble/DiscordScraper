@@ -57,6 +57,11 @@ button {
     height: 30px;
 }
 
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
 button:hover {
     opacity: 0.8;
 }
