@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const version = chrome.runtime.getManifest().version;
+    const versionDiv = document.getElementById('version-div');
+    versionDiv.textContent = `v${version}`;
     const startBtn = document.getElementById('start');
     const permissionsDiv = document.getElementById('permissions_div');
     const permissionsList = document.getElementById('permissions_list');

@@ -9,7 +9,7 @@
 }
 
 html {
-    width: 300px;
+    min-width: 300px;
     height: auto;
 }
 
@@ -36,6 +36,19 @@ div {
     align-items: center;
     text-align: center;
     margin: 10px;
+    font-family: 'Ginto Discord Regular', system-ui, sans-serif;
+}
+
+div#version-div {
+    font-family: 'Ginto Discord Regular', system-ui, sans-serif;
+    font-size: small;
+    color: black;
+    margin-top: 0px;
+}
+
+div#permissions_div {
+    font-size: small;
+    color: black;
 }
 
 button {
