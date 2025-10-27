@@ -118,6 +118,13 @@ dialog {
     box-shadow: 0 0 10px 0 #aaa;
 }
 
+dialog div.dl_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px;
+}
+
 dialog div.close-btn {
     position: absolute;
     top: 5px;
@@ -125,8 +132,11 @@ dialog div.close-btn {
     cursor: pointer;
 }
 
-dialog div#dl-container {
+dialog div#dl_container {
+    display: flex;
+    flex-direction: column;
     height: 90%;
+    overflow-y: hidden;
 }
 
 dialog div#keys-container {
@@ -137,4 +147,20 @@ dialog div#keys-container {
     margin: 10px 0;
     overflow-y: scroll;
     text-align: left;
+}
+
+dialog div#options-container {
+    min-height: 10%;
+}
+
+dialog div.nested-container {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+dialog span.arrow {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: x-small;
+    color: #5865f2;
 }
