@@ -14,13 +14,8 @@ Moncomble, F. (2025). DiscordScraper (Version 0.1) [JavaScript]. Arras, France: 
 [![Firefox add-on](https://github.com/user-attachments/assets/855e2e46-2b44-42d7-bba5-f2a2fbb7e88b)](https://github.com/fmoncomble/discordscraper/releases/latest/download/discordscraper.xpi)
 
 ## Chromium-based browsers
-While the add-on is in beta testing:
-- [Download the repository as a zip file](https://github.com/fmoncomble/discordscraper/releases/latest/download/discordscraper.zip)
-- Unzip into a folder on your computer
-- Open `chrome://extensions` (or similar depending on your browser)
-- Toggle Developer mode
-- Click `Load unpacked extension`
-- Select the unzipped folder
+[![available-chrome-web-store4321](https://github.com/user-attachments/assets/ba9434f2-0e7f-429e-bafd-7586460857a4)](https://chromewebstore.google.com/detail/discord-scraper/pckgodfgdjdmhpnjgjpgdpilkokkibfc)
+
 
 ### Remember to pin the add-on to the toolbar
 
